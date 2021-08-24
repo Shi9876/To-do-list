@@ -1,0 +1,236 @@
+body{
+	background-color: #aed6f1;
+	display: flex;
+	background-image:url("picture.jpg");
+	background-position: right bottom, left top;
+   background-repeat: no-repeat, repeat;
+   background-size:80%;
+   height:auto;
+   width:100%;
+   padding-top:14rem;
+ }
+ .tasks{
+	float:left;
+	padding-left:2.5rem;
+	margin-top:-8rem;
+	line-height:1.8rem;
+	color: #3498db;
+	font-size:1.5rem;
+}
+.tasks h2{
+	color:#616a6b;
+}
+.todo-list{
+    
+	width:350px;
+	color:#d35400;
+	margin:0;
+	margin-top:-3rem;
+    padding-left:54rem;
+	height:50rem;
+	align-items: center;
+	justify-content:center;
+	font-size:1.5rem;
+	opacity:0.8;
+	
+}
+.todo-list header{
+	margin:0;
+	padding:1rem 0;
+	color: #17202a;
+	background-color:#fbfcfc;
+	border-top:1.8rem solid  #707b7c;
+	text-align:center;
+}
+.todo-list footer{
+	margin:0;
+	padding:0.8rem 0;
+	background-color: #707b7c;
+}
+.todo-list .do input[type=checkbox]{
+	position: absolute;
+	width:0;
+	height:0;
+	visibility:hidden;
+}
+.todo-list .do label{
+	position: relative;
+	display:block;
+	padding: 1rem 1rem;
+	background-color:#f4f6f7 ;
+	cursor:pointer;
+}
+.todo-list .do label:hover{
+	transform: translateX(2px);
+}
+.todo-list .do label::before{
+	content:"" ;
+	display:inline-block;
+	width:1.7px;
+	height:1.7px;
+	border:0.6rem solid #fbfcfc;
+	border-radius:0.5rem;
+	vertical-align:middle;
+	margin-right:1rem;
+}
+.todo-list .do label::after{
+	content: "" ;
+	position:absolute;
+	left:0;
+	top:0;
+	bottom:0;
+	width:6px;
+	background-color: #1e8449;
+	transition: .3sec-in-out;
+}
+.todo-list .do label:hover::after{
+	width:10px;
+
+}
+.todo-list .do label .fa-check-square{
+	position:absolute;
+	left:0.8rem;
+	font-size:1.9rem;
+	top:0.8rem;
+	opacity: 0;
+	transition: .3s ease-in-out;
+}
+.todo-list .do input[type=checkbox]:checked + label .fa-check-square{
+	opacity: 1;
+}
+.todo-list .do label .label{
+	position:relative;
+	transition: .3s ease-in-out;
+}
+.todo-list .do input[type=checkbox]:checked + label .label{
+	color:#2874a6;
+}
+.todo-list .do label::after{
+	content: "";
+	position: absolute;
+	right: 100%;
+	top: 50%;
+	height: 1px;
+	background-color:#d68910;
+	transition: .3s ease-in-out;
+}
+.todo-list .do input[type=checkbox]:checked + label .label::after{
+ right:0;	
+}
+.new-task-creator{
+ margin-top:2rem;
+
+
+}
+.delete-stuff{
+	margin-top: 2rem;
+	outline:none;
+	display:flex;
+	justify-content:space-evenly;
+}
+.delete-stuff button .btn delete{
+	padding-right:2rem;
+	outline:none;
+	position:absolute;
+}
+@media (min-width:576px){
+	.todo-list{
+		max-width:540px;
+	}
+}
+@media (min-width:768px){
+	.todo-list{
+		max-width:720px;
+	}
+}
+@media (min-width:992px){
+	.todo-list{
+		max-width:960px;
+	}
+}
+@media (min-width:1200px){
+	.todo-list{
+		max-width:1152px;
+	}
+
+}
+@media (max-width:1454px){
+	body {
+    background-size:70%;
+    height:auto;
+    width:90%;
+    margin-bottom:2rem;
+}
+	.todo-list {
+    padding-left:19rem;
+    height:50%;
+    width:220px;
+    font-size:0.8rem;
+    line-height:0.5rem;
+    opacity:0.8;
+
+}
+.tasks {
+    padding-left: 2.5rem;
+    margin-top:-10rem;
+    line-height: 1.5em;
+    font-size: 1.2rem;
+}
+.delete-stuff {
+    width:240px;
+
+}
+}
+@media (max-width:667px)
+{
+	body {
+		background-size:90%;
+      margin-bottom:0.5rem;
+ }
+	.todo-list {
+    padding-left:6rem;
+    font-size:0.6rem;
+    line-height:0.1rem;
+    position:relative;
+    opacity:0.8;
+
+}
+.todo-list header {
+    padding: 0.8rem 0;
+    border-top: 1rem solid #707b7c;
+    width: 195px;
+}
+.todo-list .do label {
+    padding: 0.5rem 0.5rem;
+    width:180px;
+}
+.todo-list .do label .fa-check-square {
+    left: 0.6rem;
+    font-size: 1.5rem;
+    top: 0.6rem;
+}
+.tasks {
+    padding-left: 1rem;
+    margin-top:-14rem;
+    line-height: 1rem;
+    font-size: 0.8rem;
+    width:40px;
+}
+.tasks h2{
+	font-size:1rem;
+	padding-left:1.5rem;
+}
+.delete-stuff {
+    width:165px;
+    height:36px;
+    margin-top:1rem;
+    justify-content:space-between;
+    opacity:0.9;
+}
+.new-task-creator {
+    margin-top:1rem;
+}
+.new-task-creator input .new task{
+	width:50px;
+}
+}

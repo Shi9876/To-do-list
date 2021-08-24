@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<title>To-do-list</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+	</script>
+</head>
+<body>
+	<div class="tasks">
+		<h2 class="task-list">My lists</h2>
+		<ul class="list">
+		<li class="active-list">Work</li>
+		<li>Assignments</li>
+		<li>Practice Units</li>
+		</ul>
+		<form>
+			<input type="text" class="new list" placeholder="new list name" aria-label="new list name"/>
+		<button class="btn list" aria-label="create new list">+</button>
+	</form>
+	</div>
+	<section class="todo-list">
+		<header>ToDo List</header>
+		<div class="do">
+			<input type="checkbox" id="task1">
+			<label for="task1">
+			<i class="far fa-check-square"></i>
+				<span class="label">Morning walk</span></label>
+		</div>
+		<div class="do">
+			<input type="checkbox" id="task2">
+			<label for="task2">
+			<i class="far fa-check-square"></i>
+				<span class="label">Online Classes</span></label>
+		</div>
+		<div class="do">
+			<input type="checkbox" id="task3">
+			<label for="task3">
+				<i class="far fa-check-square"></i>
+				<span class="label">Assignments</span></label>
+		</div>
+		<div class="do">
+			<input type="checkbox" id="task4">
+			<label for="task4">
+			<i class="far fa-check-square"></i>
+				<span class="label">Reading novel</span></label>
+		</div>
+		<div class="do">
+			<input type="checkbox" id="task5">
+			<label for="task5">
+			<i class="far fa-check-square"></i>
+				<span class="label">Playing Badminton</span></label>
+		</div>
+		<div class="new-task-creator">
+		<form>
+			<input type="text" class="new task" placeholder="new task name" aria-label="new task name"/>
+		<button class="btn task" aria-label="create new task">+</button>
+	</form>
+	<div class="delete-stuff">
+		<button class="btn delete">Clear completed tasks
+		</button>
+		<button class="btn delete">Delete lists
+		</button>
+	</div>
+</div>
+</section>
+</body>
+</html>
